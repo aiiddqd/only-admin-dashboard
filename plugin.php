@@ -14,6 +14,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
+
 /**
  * Restrict front-end access for non-logged-in users
  */
