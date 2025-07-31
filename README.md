@@ -1,34 +1,40 @@
-# turcraft.ru
+# Only Admin Dashboard
 
-- адрес демо/тест сервера https://turcraft.wpcraft.ru/
-- адрес локального сервера https://turcraft.local
-- потенциальный адрес https://turcraft.ru
+**WordPress Plugin** that restricts access to the front-end of the site, redirecting non-logged-in users to the admin dashboard.
 
+## Features
 
-## платформа для локального сервера разработки
-- https://localbyflywheel.com/
-- инструкция по запуску https://localbyflywheel.com/community/t/how-can-i-restore-a-site-from-a-local-site-folder/1791
-- для локальной работы надо создать пустой файл app/public/wp-content/.local - чтобы загружался конфиг для локальной среды
+- Redirect non-logged-in users to the WordPress admin login page.
+- Allows full access to the admin dashboard.
+- Simple and lightweight.
 
+## Installation
 
-## первый запуск
+1. Upload the plugin folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the **Plugins** menu in WordPress.
 
-- клонируем репо в рабочую папку
-- запускаем Local
-- файлы из рабочей папки временно куда нибудь переносим
-- создаем новый сайт в Local в рабочей папке с доменом turcraft.local
-- Local создаст контейнеры
-- далее новые файлы из рабочей папки удаляем, возвращаем туда наши файлы с GIT
-- включаем поддержку SSL/HTTPS чтобы работал адрес https://turcraft.local
-- создаем пустой файл в папке app/public/wp-content/.local - чтобы система понимала что это локальный сервер для разработки
-- обновляем БД с тест/демо стенда https://turcraft.wpcraft.ru/wp-admin/tools.php?page=wp-migrate-db
-- форма авторизации https://turcraft.local/wp-login.php 
-- логин/пароль: dev/dev (но можно использовать свой с тест сервера)
+## Usage
 
+Once activated, any user who is not logged in will be redirected to the admin login page when trying to access the front-end of your site.
 
-# тест/демо сервер/стенд
+## Requirements
 
-- https://turcraft.wpcraft.ru/
-- вход и регистрация https://turcraft.wpcraft.ru/my/
-- ftp логин/пароль: cl36462_tc/s1sBMaJn
-- db логин_бд/пароль: cl36462_tc/3tYt9sX7
+- WordPress 5.0+
+- PHP 7.4+
+
+## License
+
+This plugin is released under the [GPL2 License](https://www.gnu.org/licenses/gpl-2.0.html).
+
+## Author
+
+- **AI** - [GitHub Profile](https://github.com/aiiddqd/)
+- Plugin Source: [GitHub Repository](https://github.com/aiiddqd/only-admin-dashboard)
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Support
+
+For any questions or issues, feel free to open an issue on GitHub.
